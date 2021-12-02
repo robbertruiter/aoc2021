@@ -15,4 +15,15 @@ function countDeeperDepths(depths) {
   return counter;
 }
 
+function sumMeasurements(measurements) {
+  let sum = [];
+  for (let j = 0; j < measurements.length; j++) {
+    const setOfThree =
+      measurements[j] + measurements[j + 1] + measurements[j + 2];
+    sum.push(setOfThree);
+  }
+  return sum;
+}
+
 console.log(countDeeperDepths(lines));
+console.log(countDeeperDepths(sumMeasurements(lines)));
