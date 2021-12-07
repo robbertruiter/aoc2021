@@ -33,7 +33,6 @@ function calculateRating(report, type) {
           Math.max(scores.highValues, scores.lowValues) === scores.highValues
             ? "1"
             : "0";
-
         break;
       case "CO2":
       default:
